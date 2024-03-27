@@ -1,0 +1,2 @@
+function t(e){return e.length<=3?e:t(e.slice(0,-3))+","+e.slice(-3)}var e=document.querySelectorAll(".population"),n=document.querySelector(".total-population"),o=document.querySelector(".average-population"),r=Array.from(e).reduce(function(t,e){return t+parseInt(e.textContent.replaceAll(",",""))},0),l=0;e.length>0&&(l=r/e.length),n.textContent=t(r.toString()),o.textContent=t(l.toString());
+//# sourceMappingURL=index.d6b6452b.js.map
